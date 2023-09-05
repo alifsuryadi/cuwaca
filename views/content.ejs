@@ -1,0 +1,36 @@
+    <%- include("partials/header.ejs") %>
+
+    <main>
+        <div class="weather-container">
+            <h1>Current Weather</h1>
+            <div class="weather-info">
+                <br>
+                <h2><%= content.name %>, <%= content.sys.country %></h2>
+                <h2> <%= dayHour %> </h2>
+                <img src="https://openweathermap.org/img/wn/<%= content.weather[0].icon %>@2x.png" alt="Icon cloud">
+                
+
+                <!-- Rumus uppercase each first letter -->
+                <% const arr = content.weather[0].description.split(" ")
+                for (var i = 0; i < arr.length; i++) {
+                    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+                }
+                const weatherr = arr.join(" ")%>
+
+                <p><%= weatherr %></p>
+
+
+                <!-- Kelvin to celcius -->
+                <% const celcius =  Math.round(content.main.temp - 273.15) %>
+                <h3><%= celcius %>°C</h3>
+
+
+                <p><img src="/images/droplet-fill.svg" alt="icon humidity"> <%= content.main.humidity %>%</p>
+
+                <h4> <img src="/images/wind_4.svg" alt="Wind speed icon"> &nbsp; <%= content.wind.speed %>  M/S </h4>
+            </div>
+        </div>
+    </main>
+
+
+    <%- include("partials/footer.ejs") %>

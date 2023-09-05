@@ -1,0 +1,74 @@
+/* Style the weather container */
+
+.weather-container {
+    text-align: center;
+    background-image: url(../images/mountain.jpg);
+    background-size: cover;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+    max-width: 100%;
+	min-height: 480px;
+}
+
+/* Style the header */
+.weather-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the weather info */
+.weather-info {
+    font-size: 18px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-info > h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.weather-info > h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.weather-info > h4{
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.weather-info > h4 > img{
+    width: 14px;
+}
+
+.weather-info > img{
+    width: 150px;
+}
+
+
+
+.weather-info > p{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    margin: 15px 0;
+}
+
+.weather-info > p:first-of-type{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+
+

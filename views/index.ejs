@@ -1,0 +1,53 @@
+    <%- include("partials/header.ejs") %>
+    <main>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="/cuwaca-city" id="myForm" method="post">
+                    <h1>Your Location</h1>
+                    <p>Please enter the data accurately</p>
+                    <input type="text" id="city" name="city" placeholder="City" required>
+            
+                    <input type="text" id="country" name="country" placeholder="Country" required> 
+                    <br><br>
+
+                    <button type="submit">Check Weather</button>
+
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="/cuwaca-akses" id="myForm" method="post">
+                    <h1>Your Location</h1>
+                    <p>Allow access to your location for content auto-fill</p>
+                    <input type="text" id="latitude" name="latitude" value="" placeholder="Latitude" readonly>
+            
+                    <input type="text" id="longitude" name="longitude" value="" placeholder="Longitude" readonly> 
+                    <br>
+                    <span class="allowLocation"></span> <br>
+
+                    <button type="submit">Check Weather</button>
+
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Make sure your weather is okay!</h1>
+                        <p>To check the weather in your area, please enter your location information</p>
+                        <button class="ghost" id="signIn">Back</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Check your weather!</h1>
+                        <p>Allow us to access your current location</p>
+                        <button onclick="getLocation()" class="ghost location"><img src="/images/geo-alt-fill.svg" alt="location icon"> Allow Location</button> <br>
+                        <p>Or without location access</p>
+                        <button class="ghost" id="signUp">Alternative Method</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="/js/index.js"></script>
+
+    <%- include("partials/footer.ejs") %>
