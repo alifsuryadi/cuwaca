@@ -32,6 +32,7 @@ Start the server
 ```
 
 ---
+## Preview
 
 ### Automatically Check Weather in Your Area via Latitude & Longitude
 ![Cuwaca (1)](https://github.com/alifsuryadi/cuwaca/assets/119511703/d1090b80-8fbe-4e06-8f5d-cd1a3347f3d9)
