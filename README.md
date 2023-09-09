@@ -35,18 +35,22 @@ Start the server
 ## Preview
 
 ### - Automatically Check Weather in Your Area via Latitude & Longitude
-![Cuwaca (1)](https://github.com/alifsuryadi/cuwaca/assets/119511703/d1090b80-8fbe-4e06-8f5d-cd1a3347f3d9)
+![Cuwaca (1)-min](https://github.com/alifsuryadi/cuwaca/assets/119511703/3e1963db-a6ed-4331-a87e-308420dcacfb)
+
 
 ---
 ### - Check Weather in Your Area or Any Location Using City & Country Input
 #### -- Initial Display
-![Cuwaca (2)](https://github.com/alifsuryadi/cuwaca/assets/119511703/eb33aad3-82ff-4801-ac7c-a7f82ab21c98)
+![Cuwaca (2)-min](https://github.com/alifsuryadi/cuwaca/assets/119511703/6003e388-6c62-4691-bb0d-20615a88f89b)
+
 
 #### -- Display After Input
-![Cuwaca (3)](https://github.com/alifsuryadi/cuwaca/assets/119511703/7bc7b70c-85a9-4eb0-84e7-72afd96dfe3c)
+![Cuwaca (3)-min](https://github.com/alifsuryadi/cuwaca/assets/119511703/8a259e98-2a78-4d30-8182-853458230c1e)
+
 
 ---
 ### - And here are the weather display results
-![Cuwaca (4)](https://github.com/alifsuryadi/cuwaca/assets/119511703/fec60c87-3c69-4889-8130-42fc21b2034d)
+![Cuwaca (4)-min](https://github.com/alifsuryadi/cuwaca/assets/119511703/544c93e1-09bd-43c7-a191-88cdab84c5d9)
 
-#### Thanks for reading
+
+#### Thanks for visiting
