@@ -53,4 +53,8 @@ Start the server
 ![Cuwaca (4)-min](https://github.com/alifsuryadi/cuwaca/assets/119511703/544c93e1-09bd-43c7-a191-88cdab84c5d9)
 
 
+## LICENSE 
+[MIT License](LICENSE)
+
+
 #### Thanks for visiting
