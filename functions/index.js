@@ -4,16 +4,11 @@ import bodyParser from "body-parser";
 import { API_URL } from "../config.js";
 import { API_Key } from "../config.js";
 import serverless from "serverless-http";
-import path from "path";
-import { fileURLToPath } from "url";
 
 const app = express();
 const port = 3000;
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 const router = express.Router();
 
-app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.use(express.static("public"));
