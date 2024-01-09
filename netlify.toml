@@ -2,7 +2,7 @@
   functions = "functions"
 
 [functions]
-  external_node_modules = ["express"]
+  external_node_modules = ["express", "axios", "body-parser", "dotenv", "ejs", "serverless-http"]
 
 [[redirects]]
   from = "/*"
