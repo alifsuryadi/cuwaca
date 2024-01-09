@@ -9,3 +9,6 @@ config.js
 
 # IDE
 .vscode/*
+
+# Local Netlify folder
+.netlify

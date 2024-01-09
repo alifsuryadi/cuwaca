@@ -101,4 +101,5 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
+app.use("/.netlify/function/index", router);
 export const handler = serverless(app);
