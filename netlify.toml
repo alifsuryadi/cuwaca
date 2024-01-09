@@ -1,12 +1,10 @@
 [build]
-  command = "npm run build"
   functions = "functions"
-  publish = "public"
 
 [functions]
   external_node_modules = ["express"]
 
 [[redirects]]
-  from = "/api/*"
+  from = "/*"
   to = "/.netlify/functions/index/:splat"
   status = 200

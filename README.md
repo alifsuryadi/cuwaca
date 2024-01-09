@@ -40,7 +40,7 @@ Real-time, Accurate Weather Forecast for Your Location Using API Data
 #### Start the server
 
 ```bash
-  node index.js
+  node functions/index.js
 ```
 
 ---
