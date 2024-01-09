@@ -1,16 +1,19 @@
-import express from "express";
+import express, { response } from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
-import { API_URL } from "../config.js";
-import { API_Key } from "../config.js";
+import dotenv from "dotenv";
+dotenv.config();
 import serverless from "serverless-http";
 
 const app = express();
 const port = 3000;
 const router = express.Router();
 
-app.set("view engine", "ejs");
+const API_Key = process.env.API_Key;
+export { API_Key };
+const API_URL = "http://api.openweathermap.org/";
 
+app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -59,7 +62,6 @@ app.post("/cuwaca-akses", async (req, res) => {
       `${API_URL}data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_Key}`
     );
     const result = response.data;
-
     res.render("content.ejs", {
       content: result,
       dayHour: dayHours(),
@@ -67,6 +69,7 @@ app.post("/cuwaca-akses", async (req, res) => {
   } catch (error) {
     // Tangani kesalahan dan kirim respons sesuai
     // res.redirect("/");
+    console.error("Error:", error.message);
     res.status(500).json({ error: "An error occurred. Try Again" });
   }
 });
@@ -81,6 +84,7 @@ app.post("/cuwaca-city", async (req, res) => {
     const response = await axios.get(
       `${API_URL}data/2.5/weather?q=${city},${country}&APPID=${API_Key}`
     );
+
     const result = response.data;
 
     res.render("content.ejs", {
@@ -89,6 +93,7 @@ app.post("/cuwaca-city", async (req, res) => {
     });
   } catch (error) {
     // Tangani kesalahan dan kirim respons sesuai
+    console.error("Error:", error.message);
     res.status(500).json({ error: "An error occurred. Try again" });
   }
 });

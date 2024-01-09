@@ -1,10 +1,6 @@
 .vercel
 .env
-node_modules
 *.lock
-vercel_token
-API_Key
-config.js
 
 
 # IDE

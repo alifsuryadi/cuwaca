@@ -20,13 +20,12 @@ Real-time, Accurate Weather Forecast for Your Location Using API Data
   cd cuwaca
 ```
 
-#### Create a config file
+#### Create a .env file
 
-- Before starting the server, create a file named config.js in the project root with the following content :
+- Before starting the server, create a file named .env in the project root with the following content :
 
 ```bash
-  export const API_Key = "your_openweathermap_api_key";
-  export const API_URL = "http://api.openweathermap.org/";
+  API_Key = "your_openweathermap_api_key";
 ```
 
 - Replace 'your_openweathermap_api_key' with your actual OpenWeatherMap API key.
